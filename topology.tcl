@@ -78,7 +78,7 @@ $ns connect $tcp0 $sink0
 #cbr0
 set cbr0 [new Application/Traffic/CBR]
 $cbr0 set packetSize_ $c
-$cbr0 set interval_ 0.005
+$cbr0 set interval_ 0.55
 $cbr0 attach-agent $tcp0
 
 set tcp1 [new Agent/TCP]
@@ -90,7 +90,7 @@ $ns connect $tcp1 $sink1
 #cbr1
 set cbr1 [new Application/Traffic/CBR]
 $cbr1 set packetSize_ $c
-$cbr1 set interval_ 0.005
+$cbr1 set interval_ 0.45
 $cbr1 attach-agent $tcp1
 
 set tcp2 [new Agent/TCP]
